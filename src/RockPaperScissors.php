@@ -13,6 +13,12 @@ class RockPaperScissors
             $winner = $p1;
         } elseif ($first_input == 'r' && $second_input == 'p') {
             $winner = $p2;
+        } elseif ($first_input == 'p' && $second_input == 'r') {
+            $winner = $p1;
+        } elseif ($first_input == 'p' && $second_input == 's') {
+            $winner = $p2;
+        } elseif ($first_input == 's' && $second_input == 'p') {
+            $winner = $p1;
         }
         return $winner;
     }
