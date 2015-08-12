@@ -5,8 +5,14 @@
     </head>
     <body>
         <div class="container">
-            <h1>See who won the game!</h1>
-            <h3>{{ results }}</h3>
+            <div class='jumbotron'>
+            <h1>{{ results }}</h1>
+        </div>
+        {% if results == 'Tie'  %}
+            <p>It is a tie</p>
+            {% else %}
+            <h3>Congratulations!</h3>
+        {% endif %}
             <p><a href='/'>Play again!</a></p>
 
         </div>
