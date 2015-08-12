@@ -16,5 +16,19 @@
             //Assert
             $this->assertEquals("tie", $result);
         }
+
+        function test_rock_scissors()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $first_input = "r";
+            $second_input = "s";
+
+            //Act
+            $result = $test_RockPaperScissors->rockPaperScissorsMethod($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals("player 1 wins", $result);
+        }
     }
  ?>
