@@ -1,0 +1,36 @@
+Specs in plain English
+
+1) Both inputs same
+Input 1: 'r'
+Input 2: 'r'
+Output: 'tie'
+
+2) Player 1 rock, player 2 scissors
+Input 1: 'r'
+Input 2: 's'
+Output: 'player 1 wins'
+
+3) Player 1 rock, player 2 paper
+Input 1: 'r'
+Input 2: 'p'
+Output: 'player 2 wins'
+
+4) Player 1 paper, player 2 rock
+Input 1: 'p'
+Input 2: 'r'
+Output: 'player 1 wins'
+
+5) Player 1 paper, player 2 scissors
+Input 1: 'p'
+Input 2: 's'
+Output: 'player 2 wins'
+
+6) Player 1 scissors, player 2 rock
+Input 1: 's'
+Input 2: 'r'
+Output: 'player 2 wins'
+
+7) Player 1 scissors, player 2 paper
+Input 1: 's'
+Input 2: 'p'
+Output: 'player 1 wins'
