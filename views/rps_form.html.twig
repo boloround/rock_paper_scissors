@@ -1,14 +1,53 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/rps_style.css">
+        <!-- <link rel="stylesheet" href="css/rps_style.css"> -->
+
+
+
+
         <title>Rock Paper Scissors</title>
     </head>
     <body>
         <div class = 'container'>
             <h1>Rock Paper Scissors</h1>
+            <form action='/results'>
+            <h4>Player 1</h4>
+                <div class='radio'>
+                    <label>
+                    <input type='radio' name='player1' value='r'>Rock
+                    </label>
+                </div>
+                <div class='radio'>
+                    <label>
+                    <input type='radio' name='player1' value='p'>Paper
+                    </label>
+                </div>
+                <div class='radio'>
+                    <label>
+                    <input type='radio' name='player1' value='s'>Scissors
+                    </label>
+                </div>
 
-            <h3>Player 1, choose</h3>
+            <h4>Player 2</h4>
+                <div class='radio'>
+                    <label>
+                    <input type='radio' name='player2' value='r'>Rock
+                    </label>
+                </div>
+                <div class='radio'>
+                    <label>
+                    <input type='radio' name='player2' value='p'>Paper
+                    </label>
+                </div>
+                <div class='radio'>
+                    <label>
+                    <input type='radio' name='player2' value='s'>Scissors
+                    </label>
+                </div>
+                <button name="submit" class="btn btn-success">Submit</button>
+            </form>
         </div>
+
     </body>
 </html>
