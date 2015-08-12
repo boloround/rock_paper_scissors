@@ -4,10 +4,15 @@ class RockPaperScissors
 {
     function rockPaperScissorsMethod($first_input, $second_input)
     {
-        if($first_input == $second_input) {
-            $winner = 'tie';
+        $p1 = 'Player 1 wins';
+        $p2 = 'Player 2 wins';
+
+        if ($first_input == $second_input) {
+            $winner = 'Tie';
         } elseif ($first_input == 'r' && $second_input == 's') {
-            $winner = 'player 1 wins';
+            $winner = $p1;
+        } elseif ($first_input == 'r' && $second_input == 'p') {
+            $winner = $p2;
         }
         return $winner;
     }

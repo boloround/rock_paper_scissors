@@ -14,7 +14,7 @@
             $result = $test_RockPaperScissors->rockPaperScissorsMethod($first_input, $second_input);
 
             //Assert
-            $this->assertEquals("tie", $result);
+            $this->assertEquals("Tie", $result);
         }
 
         function test_rock_scissors()
@@ -28,7 +28,23 @@
             $result = $test_RockPaperScissors->rockPaperScissorsMethod($first_input, $second_input);
 
             //Assert
-            $this->assertEquals("player 1 wins", $result);
+            $this->assertEquals("Player 1 wins", $result);
         }
+
+        function test_rock_paper()
+        {
+            //Arrange
+            $testRockPaperScissors = new RockPaperScissors;
+            $first_input = 'r';
+            $second_input = 'p';
+
+            //Act
+            $result = $testRockPaperScissors->rockPaperScissorsMethod($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals('Player 2 wins', $result);
+        }
+
+        
     }
  ?>
